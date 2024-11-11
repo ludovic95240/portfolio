@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À propos de Ludovic Pires</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop();
+  
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+<body>
+    <div class="logo">
+        <span>LP</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="about.html" class="nav-link">À propos</a></li>
+          <li><a href="projects.html" class="nav-link">Projets</a></li>
+          <li><a href="resume.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+      
+
+  <section class="about-section">
+    <h2>À propos de moi</h2>
+    <p>Étudiant en Master Data Management à Aivancity, en recherche d'alternance comme Data Analyst / Data Scientist.</p>
+    <div class="skills">
+        <h3>Compétences</h3>
+        <ul>
+          <li><img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL" class="skill-icon">SQL</li>
+          <li><img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" class="skill-icon">Python</li>
+          <li><img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI" class="skill-icon">Power BI</li>
+          <li><img src="https://img.icons8.com/color/48/000000/flask.png" alt="Flask" class="skill-icon">Flask</li>
+        </ul>
+      </div>
+      
+  </section>
+  <script>
+  // Sélectionne tous les liens de la navigation
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Récupère le nom de fichier de la page actuelle
+  const currentPage = window.location.pathname.split('/').pop();
+
+  // Ajoute la classe 'active' au lien correspondant
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>

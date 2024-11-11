@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projets de Ludovic Pires</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop();
+  
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+<body>
+    <div class="logo">
+        <span>LP</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="about.html" class="nav-link">À propos</a></li>
+          <li><a href="projects.html" class="nav-link">Projets</a></li>
+          <li><a href="resume.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+      
+      
+    
+  <section class="projects-section">
+    <h2>Mes Projets</h2>
+    <ul>
+      <li><a href="https://github.com/ludovic-dsp/projet1" target="_blank">Projet 1 - Analyse des ventes</a></li>
+      <li><a href="https://github.com/ludovic-dsp/projet2" target="_blank">Projet 2 - Machine Learning pour la segmentation</a></li>
+    </ul>
+  </section>
+  <script>
+    // Sélectionne tous les liens de la navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    // Récupère le nom de fichier de la page actuelle
+    const currentPage = window.location.pathname.split('/').pop();
+  
+    // Ajoute la classe 'active' au lien correspondant
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>

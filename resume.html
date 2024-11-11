@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CV de Ludovic Pires</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop();
+  
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+<body>
+    <div class="logo">
+        <span>LP</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="about.html" class="nav-link">À propos</a></li>
+          <li><a href="projects.html" class="nav-link">Projets</a></li>
+          <li><a href="resume.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+      
+  <section class="resume-section">
+    <h2>Mon CV</h2>
+    <iframe src="Ludovic-Pires-CV.pdf" width="100%" height="600px"></iframe>
+    <p><a href="Ludovic-Pires-CV.pdf" download>Télécharger le CV</a></p>
+  </section>
+  <script>
+    // Sélectionne tous les liens de la navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    // Récupère le nom de fichier de la page actuelle
+    const currentPage = window.location.pathname.split('/').pop();
+  
+    // Ajoute la classe 'active' au lien correspondant
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>
