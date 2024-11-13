@@ -206,4 +206,9 @@ body {
     font-size: 2em;
     color: #333;
     margin-bottom:
-  
+
+
+  .navbar-nav .nav-item {
+      margin-right: 15px; /* Espace entre les éléments */
+    }
+    
