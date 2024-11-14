@@ -10,29 +10,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
  
 </head>
-<script>
-    const navLinks = document.querySelectorAll('.nav-link');
-    const currentPage = window.location.pathname.split('/').pop();
+ 
+<body style="background-image: url('A_wallpaper_inspired_by_a_person_coding_at_a_desk_low_contrast.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+     
+  <div class="container-fluid d-flex justify-content-center mt-3">
+    <nav class="navbar navbar-dark bg-transparent">
+      <div class="d-flex align-items-center">
+        <!-- Logo -->
+        <div class="logo me-3">
+          <span style="color:rgb(255, 255, 255); font-weight: bold; font-size: 2.5rem;">LP</span>
+        </div>
   
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  </script>
-  
-<body>
-    <div class="logo">
-        <span>LP</span>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="about.html" class="nav-link">À propos</a></li>
-          <li><a href="projects.html" class="nav-link">Projets</a></li>
-          <li><a href="resume.html" class="nav-link">CV</a></li>
+        <!-- Liens de navigation alignés horizontalement -->
+        <ul class="navbar-nav flex-row align-items-center">
+          <li class="nav-item me-2">
+            <a href="index.html" class="nav-link" style="color: black; font-size: 1.5rem;">
+              <span class="badge bg-dark">Accueil</span>
+            </a>
+          </li>
+
+          <li class="nav-item me-2">
+            <a href="about.html" class="nav-link" style="color: black; font-size: 1.5rem;">
+              <span class="badge bg-dark">À propos</span>
+            </a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="projects.html" class="nav-link" style="color: black; font-size: 1.5rem;">
+              <span class="badge bg-dark">Projets</span>
+            </a>
+          </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+  </div>
       
   <section class="resume-section">
     <h2>Mon CV</h2>
