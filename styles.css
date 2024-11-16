@@ -6,8 +6,7 @@
 }
 
 /* Couleur des sous-titres des sections */
-.about-me .section-title, 
-.contact-info .section-title {
+.section-title {
   color: #ffffff; /* Par exemple, un rouge tomate */
 }
 
@@ -84,4 +83,37 @@ body {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
+}
+.project-section {
+  color: white;
+  padding: 4rem 1rem;
+}
+.project-heading {
+  color: #e83e8c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.project-card {
+  margin-bottom: 20px;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  color: #ffffff;
+}
+.card-text {
+  color: #d3d3d3;
+}
+.btn-custom {
+  background-color: #e83e8c;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #d63384;
 }
