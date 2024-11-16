@@ -121,13 +121,13 @@ body, html {
 }
 
 .full-screen-container {
-  position: relative;
+  position: sticky;
   height: calc(100vh - 56px); /* Hauteur moins la navbar */
   width: 100%;
 }
 
 iframe.pdf-viewer {
-  position: absolute;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
