@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
 </head>
 
-  
 <body style="background-image: url('A_wallpaper_inspired_by_a_person_coding_at_a_desk_low_contrast.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-  
+
   <div class="container-fluid d-flex justify-content-center mt-3">
     <nav class="navbar navbar-dark bg-transparent">
       <div class="d-flex align-items-center">
@@ -26,14 +26,13 @@
         <!-- Liens de navigation alignés horizontalement -->
         <ul class="navbar-nav flex-row align-items-center">
           <li class="nav-item me-2">
-            <a href="index.html" class="nav-link" style="color: black; font-size: 1.5rem;">
-              <span class="badge bg-dark">Accueil</span>
-            </a>
-          </li>
-
-          <li class="nav-item me-2">
             <a href="about.html" class="nav-link" style="color: black; font-size: 1.5rem;">
               <span class="badge bg-dark">À propos</span>
+            </a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="projects.html" class="nav-link" style="color: black; font-size: 1.5rem;">
+              <span class="badge bg-dark">Projets</span>
             </a>
           </li>
           <li class="nav-item me-2">
@@ -45,59 +44,55 @@
       </div>
     </nav>
   </div>
- 
-      
-    
+
+  <!-- Section Projets -->
   <div class="container-fluid project-section">
-    <h1 class="project-heading">
-        Mes <strong class="text-warning">Projets Récents</strong>
-    </h1>
-    <p class="text-center">Voici quelques projets sur lesquels j'ai travaillé récemment.</p>
+    <h1 class="title text-center">Mes <strong class="subtitle">Projets Récents</strong></h1>
+    <p class="subtitle text-center">Voici quelques projets sur lesquels j'ai travaillé récemment.</p>
 
     <div class="row">
-        <!-- Projet 1 -->
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <img src="chatify.png" class="card-img-top" alt="Chatify">
-                <div class="card-body">
-                    <h5 class="card-title">Chatify</h5>
-                    <p class="card-text">Espace de chat personnel construit avec React.js, Material-UI et Firebase, avec messagerie en temps réel, partage d'images et réactions.</p>
-                    <a href="https://github.com/soumyajit4419/Chatify" class="btn btn-custom btn-sm" target="_blank">Code Source</a>
-                    <a href="https://chatify-49.web.app/" class="btn btn-outline-light btn-sm" target="_blank">Démo</a>
-                </div>
-            </div>
+      <!-- Projet 1 -->
+      <div class="col-md-4 project-card">
+        <div class="hero">
+          <img src="chatify.png" class="card-img-top" alt="Chatify">
+          <div class="card-body">
+            <h5 class="card-title">Chatify</h5>
+            <p class="card-text">Espace de chat personnel construit avec React.js, Material-UI et Firebase, avec messagerie en temps réel, partage d'images et réactions.</p>
+            <a href="https://github.com/soumyajit4419/Chatify" class="btn btn-custom btn-sm" target="_blank" rel="noopener">Code Source</a>
+            <a href="https://chatify-49.web.app/" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">Démo</a>
+          </div>
         </div>
+      </div>
 
-        <!-- Projet 2 -->
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <img src="blog.png" class="card-img-top" alt="Bits of Code">
-                <div class="card-body">
-                    <h5 class="card-title">Bits-0f-C0de</h5>
-                    <p class="card-text">Blog personnel construit avec Next.js et Tailwind CSS, prenant le contenu des fichiers markdown. Prend en charge le mode sombre.</p>
-                    <a href="https://github.com/soumyajit4419/Bits-0f-C0de" class="btn btn-custom btn-sm" target="_blank">Code Source</a>
-                    <a href="https://blogs.soumya-jit.tech/" class="btn btn-outline-light btn-sm" target="_blank">Démo</a>
-                </div>
-            </div>
+      <!-- Projet 2 -->
+      <div class="col-md-4 project-card">
+        <div class="hero">
+          <img src="blog.png" class="card-img-top" alt="Bits of Code">
+          <div class="card-body">
+            <h5 class="card-title">Bits-0f-C0de</h5>
+            <p class="card-text">Blog personnel construit avec Next.js et Tailwind CSS, prenant le contenu des fichiers markdown. Prend en charge le mode sombre.</p>
+            <a href="https://github.com/soumyajit4419/Bits-0f-C0de" class="btn btn-custom btn-sm" target="_blank" rel="noopener">Code Source</a>
+            <a href="https://blogs.soumya-jit.tech/" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">Démo</a>
+          </div>
         </div>
+      </div>
 
-        <!-- Projet 3 -->
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <img src="codeEditor.png" class="card-img-top" alt="Editor.io">
-                <div class="card-body">
-                    <h5 class="card-title">Editor.io</h5>
-                    <p class="card-text">Éditeur de code en ligne pour HTML, CSS, JS avec aperçu instantané, sauvegarde automatique et éditeur Markdown pour README.</p>
-                    <a href="https://github.com/soumyajit4419/Editor.io" class="btn btn-custom btn-sm" target="_blank">Code Source</a>
-                    <a href="https://editor.soumya-jit.tech/" class="btn btn-outline-light btn-sm" target="_blank">Démo</a>
-                </div>
-            </div>
+      <!-- Projet 3 -->
+      <div class="col-md-4 project-card">
+        <div class="hero">
+          <img src="codeEditor.png" class="card-img-top" alt="Editor.io">
+          <div class="card-body">
+            <h5 class="card-title">Editor.io</h5>
+            <p class="card-text">Éditeur de code en ligne pour HTML, CSS, JS avec aperçu instantané, sauvegarde automatique et éditeur Markdown pour README.</p>
+            <a href="https://github.com/soumyajit4419/Editor.io" class="btn btn-custom btn-sm" target="_blank" rel="noopener">Code Source</a>
+            <a href="https://editor.soumya-jit.tech/" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">Démo</a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Ajoutez plus de projets ici en utilisant la même structure -->
-</div>
-  <!-- Section Contact Rapide -->
+  <!-- Section Contact -->
   <section class="contact-info bg-dark text-center py-1 fixed-bottom">
     <h3 class="section-title mb-1">Contactez-moi</h3>
     <div class="d-flex justify-content-center">

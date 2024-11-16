@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
- 
 <body style="background-image: url('A_wallpaper_inspired_by_a_person_coding_at_a_desk_low_contrast.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
      
   <div class="container-fluid d-flex justify-content-center mt-3">
@@ -41,28 +38,30 @@
             </a>
           </li>
       </div>
-    </nav>
-  </div>
-      
-  <section class="resume-section">
-    <h2>Mon CV</h2>
-    <iframe src="Ludovic-Pires-CV.pdf" width="100%" height="600px"></iframe>
-    <p><a href="Ludovic-Pires-CV.pdf" download>Télécharger le CV</a></p>
-  </section>
-  
 
-    <!-- Section Contact Rapide -->
-  <section class="contact-info bg-dark text-center py-1 fixed-bottom">
-    <h3 class="section-title mb-1">Contactez-moi</h3>
-      <div class="d-flex justify-content-center">
-        <a href="mailto:ludo.dossantos@hotmail.fr" target="_blank" class="mx-2"><i class="fa-solid fa-at fa-2x"></i></a>
-        <a href="tel:0634503087" class="mx-2"><i class="fa-solid fa-phone fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ludovic-dos-santos-pires-0a17a2175/" target="_blank" class="mx-2"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-        <a href="https://github.com/ludovic95240" target="_blank" class="mx-2"><i class="fa-brands fa-github fa-2x"></i></a>
-      </div>
-  </section>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Conteneur pour le CV -->
+  <div class="full-screen-container">
+    <!-- Iframe du CV -->
+    <iframe src="Ludovic-Pires-CV.pdf" class="pdf-viewer"></iframe>
+
+    <!-- Bouton de téléchargement -->
+    <a href="Ludovic-Pires-CV.pdf" class="btn btn-primary btn-lg download-btn" download>
+      <i class="fas fa-download"></i>&nbsp;Télécharger le CV
+    </a>
+  </div>
+  
+ 
+
+<!-- Section Contact -->
+<section class="contact-info bg-dark text-center py-1 fixed-bottom">
+  <h3 class="section-title mb-1">Contactez-moi</h3>
+  <div class="d-flex justify-content-center">
+    <a href="mailto:ludo.dossantos@hotmail.fr" target="_blank" class="mx-2"><i class="fa-solid fa-at fa-2x"></i></a>
+    <a href="tel:0634503087" class="mx-2"><i class="fa-solid fa-phone fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/ludovic-dos-santos-pires-0a17a2175/" target="_blank" class="mx-2"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+    <a href="https://github.com/ludovic95240" target="_blank" class="mx-2"><i class="fa-brands fa-github fa-2x"></i></a>
+  </div>
+</section>
 
 </body>
 </html>

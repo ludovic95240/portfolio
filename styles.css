@@ -1,60 +1,87 @@
-/* Styles globaux */
+/* Updated styles with the "Urban Jungle" color palette */
 
-/* Couleur du titre principal */
-.title {
-  color: #ffffff; /* Par exemple, un bleu vif */
-}
-
-/* Couleur des sous-titres des sections */
-.section-title {
-  color: #ffffff; /* Par exemple, un rouge tomate */
-}
-
-/* Couleur du texte des paragraphes */
-.subtitle {
-  color: #ffffff; /* Couleur grise pour les descriptions */
-}
-
-
-.hero {
-  background-color: #0000009f;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.527);
-}
-
-.btn-dark {
-  background-color: #ffffff;
-  border: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-  padding: 0.6rem 1.2rem;
-  font-weight: 600;
-  border-radius: 5px;
-}
-
-.btn-dark:hover {
-  background-color: #ffffff;
-  color: #ffffff;
-
-
-}
-
-/* Style général */
+/* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #343a40;
+  background-color: #ffffff; /* Dove Gray */
+  color: #ffffff; /* Mine Shaft for main text */
   margin: 0;
   padding: 0;
 }
 
-.skills {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Header and title */
+.title {
+  color: #ffffff; /* Emperor */
 }
 
+.subtitle {
+  color: #ffffff; /* Dove Gray */
+}
+
+.hero {
+  background-color: #02020293; /* Clay Creek */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #1f1f1f; /* Mine Shaft for text contrast */
+}
+
+/* Navigation */
+.nav-link {
+  color: #4f4f4f; /* Emperor */
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #78783a; /* Yellow Metal */
+}
+
+.logo {
+  color: #4f4f4f;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #78783a; /* Yellow Metal */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-dark:hover {
+  background-color: #8f8f5b; /* Clay Creek */
+}
+
+/* Project Cards */
+.card {
+  background-color: #000000; /* White for clarity */
+  border: none;
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #ffffff; /* Emperor */
+}
+
+.card-text {
+  color: #ffffff; /* Mine Shaft */
+}
+.card-img {
+  height: 200px;
+  object-fit: cover;
+  color: white;
+}
+
+/* Footer */
+.contact-info {
+  background-color: #1f1f1f; /* Mine Shaft */
+  color: #ffffff; /* White text for contrast */
+}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -84,36 +111,58 @@ body {
   font-weight: 600;
   margin: 0;
 }
-.project-section {
-  color: white;
-  padding: 4rem 1rem;
+/* Général */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa; /* Fond clair */
 }
-.project-heading {
-  color: #e83e8c;
-  text-align: center;
-  margin-bottom: 2rem;
+
+.full-screen-container {
+  position: relative;
+  height: calc(100vh - 56px); /* Hauteur moins la navbar */
+  width: 100%;
 }
-.project-card {
-  margin-bottom: 20px;
-}
-.card {
-  background-color: rgba(255, 255, 255, 0.1);
+
+iframe.pdf-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
   border: none;
+  background-color: white; /* Assure un fond blanc */
 }
-.card img {
-  height: 200px;
-  object-fit: cover;
-}
-.card-title {
-  color: #ffffff;
-}
-.card-text {
-  color: #d3d3d3;
-}
-.btn-custom {
-  background-color: #e83e8c;
+
+.download-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  background-color: #007bff;
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.btn-custom:hover {
-  background-color: #d63384;
+
+.download-btn:hover {
+  background-color: #0056b3;
+  text-decoration: none;
 }
+
+
+
+
+@media (max-width: 768px) {
+  iframe {
+    height: 70vh;
+  }
+  .download-btn {
+    bottom: 10px;
+    font-size: 1rem;
+  }
